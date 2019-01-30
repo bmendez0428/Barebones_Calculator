@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css?family=Rubik');
+
+body{
+    font-family:Rubik, sans-serif;
+    padding: auto;
+    background-image: linear-gradient(rgb(233, 181, 86), rgb(51, 71, 73));
+	text-align: center; /* Centers body */
+	-webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+
+}
+
+.calculator-parent{
+    display: grid;
+    width:200px;
+    margin-left: calc(50% - 100px);
+    font-size:30px;
+    grid-template-areas:
+    "display display display display"
+    "AC AC backspace divide"
+    "seven eight nine multiply"
+	"four five six minus"
+	"one two three addition"
+    "zero zero decimal equals";
+
+    /*
+    display display display display
+    AC AC backspace operator 
+    number number number operator
+    number number number operator
+    number number number operator
+    number number decimal operator
+*/
+}
+#calculator-display{
+    grid-area: display;
+    border:1px solid black;
+    background-color: rgba(48, 44, 44, 0.986);
+    color: white;
+    width:200px;
+    padding:10px;
+    text-align: right;
+    font-size:45px;
+    color: white;
+    overflow: hidden;
+    white-space: nowrap;
+}
+#calculator-clear{
+    grid-area: AC;
+    border:1px solid black;
+    padding:5px;
+    background-color:lightgray;
+}
+.calculator-number{
+	border: 1px solid black;
+	padding: 5px;
+	background-color: lightgray;
+}
+.calculator-operator{
+	border: 1px solid black;
+	padding: 5px;
+	color: white;
+	background-color: orange;
+}
+#calculator-backspace {
+	grid-area: backspace;
+	font-size: 25px;
+	border: 1px solid black;
+	padding-top: 5px;
+	background-color: lightgray;
+}
+#calculator-zero{
+    grid-area: zero;
+    border:1px solid black;
+    padding:5px;
+    background-color:lightgray;
+}
+#calculator-decimal{
+    grid-area: decimal;
+    border:1px solid black;
+    padding:5px;
+    background-color:lightgray;
+}
+.calculator-button:hover {
+	cursor: pointer;
+	color: white;
+    background-color: orange;
+}
+#lower-link{
+    padding-top: 50px;
+    font-size: 24px;
+}

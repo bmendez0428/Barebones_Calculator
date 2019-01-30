@@ -1,0 +1,48 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <meta charset="UTF-8">
+        <meta name="description" content="Vanilla Calculator built using only HTML, CSS and Javascript">
+        <meta name="author" content="Brandon Mendez">
+        <title>Barebones HTML Calculator</title>
+    </head>
+    <body>
+        <h1>Barebones HTML Calculator</h1>
+        <div class="calculator-parent">
+
+            <div id="calculator-display">0</div>
+            
+            <!--First row after display-->
+            <div class="calculator-button" id="calculator-clear">AC</div>
+            <div class="calculator-button" id="calculator-backspace">&#8676;</div>
+            <div class="calculator-button calculator-operator" id="calculator-divide">&#247;</div>
+
+            <!--Second Row-->
+            <div class="calculator-button calculator-number" id="calculator-seven">7</div>
+            <div class="calculator-button calculator-number" id="calculator-eight">8</div>
+            <div class="calculator-button calculator-number" id="calculator-nine">9</div>
+            <div class="calculator-button calculator-operator" id="calculator-multiply">x</div>
+
+            <!--Third Row-->
+            <div class="calculator-button calculator-number" id="calculator-four">4</div>
+            <div class="calculator-button calculator-number" id="calculator-five">5</div>
+            <div class="calculator-button calculator-number" id="calculator-six">6</div>
+            <div class="calculator-button calculator-operator" id="calculator-minus">-</div>
+
+            <!--Fourth Row-->
+            <div class="calculator-button calculator-number" id="calculator-one">1</div>
+            <div class="calculator-button calculator-number" id="calculator-two">2</div>
+            <div class="calculator-button calculator-number" id="calculator-three">3</div>
+            <div class="calculator-button calculator-operator" id="calculator-addition">+</div>
+
+            <!--Fifth Row / The 0 Button takes two squares-->
+            <div class="calculator-button calculator-number calculator-number-special" id="calculator-zero">0</div>
+            <div class="calculator-button" id="calculator-decimal">.</div>
+            <div class="calculator-button calculator-operator" id="calculator-equals">=</div>
+        </div>
+        <div id="lower-link">
+            <a href="https://bmendez0428.github.io/Personal_Portfolio/">Return</a>
+        </div>
+        <script type="text/javascript" src="calculatorFunctions.js"></script>
+    </body>
+</html>
